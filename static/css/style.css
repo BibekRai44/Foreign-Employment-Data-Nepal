@@ -18,3 +18,9 @@ footer{
   .filter{
     text-align: center;
   }
+.country{
+  text-align: center;
+}
+  .country h2{
+    color: blueviolet;
+  }
