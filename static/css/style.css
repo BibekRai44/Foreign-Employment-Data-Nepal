@@ -24,3 +24,12 @@ footer{
   .country h2{
     color: blueviolet;
   }
+.district{
+  text-align: center;
+}
+  .district h2{
+    color: blueviolet;
+  }
+.filter-district{
+  text-align: start;
+}
