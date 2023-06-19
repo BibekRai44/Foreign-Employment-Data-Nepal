@@ -33,3 +33,9 @@ footer{
 .filter-district{
   text-align: start;
 }
+.container-logo{
+  margin: 40px;
+  margin-left: 0%;
+  height: 10px;
+  width: 5px;
+}
