@@ -27,263 +27,195 @@
     <div class="country">
     <h2>Countrywise Labour Approval 2079</h2>
     </div>
-    <div class="filter">
-        <div>
-            <form>
-                <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value="all">All</option>
-                    <option value="albania">ALBANIA</option>
-                    <option value="angola">Angola</option>
-                    <option value="angola">Angola</option>
-                    <option value="australia">Australia</option>
-                    <option value="austria">Austria</option>
-                    <option value="bahrain">Bahrain</option>
-                    <option value="bangladesh">Bangladesh</option>
-                    <option value="barbados">BARBADOS</option>
-                    <option value="bermuda">Bermuda</option>
-                    <option value="bosnia_and_herzegovina">BOSNIA AND HERZEGOVINA</option>
-                    <option value="brazil">Brazil</option>
-                    <option value="brunei_darussalam">Brunei Darussalam</option>
-                    <option value="burkina_faso">Burkina Faso</option>
-                    <option value="cambodia">Cambodia</option>
-                    <option value="canada">Canada</option>
-                    <option value="cayman">Cayman</option>
-                    <option value="chile">CHILE</option>
-                    <option value="china">China</option>
-                    <option value="colombia">COLOMBIA</option>
-                    <option value="combodia">Combodia</option>
-                    <option value="comoros">Comoros</option>
-                    <option value="croatia">Croatia</option>
-                    <option value="cyprus">Cyprus</option>
-                    <option value="czech_republic">Czech Republic</option>
-                    <option value="denmark">DENMARK</option>
-                    <option value="dominican_republic">Dominican Republic</option>
-                    <option value="egypt">Egypt</option>
-                    <option value="equatorial_guinea">Equatorial Guinea</option>
-                    <option value="ethiopia">ETHIOPIA</option>
-                    <option value="finland">Finland</option>
-                    <option value="france">France</option>
-                    <option value="gabon">GABON</option>
-                    <option value="germany">Germany</option>
-                    <option value="ghana">Ghana</option>
-                    <option value="greece">Greece</option>
-                    <option value="hong_kong_sar_china">Hong Kong SAR,China</option>
-                    <option value="hungary">Hungary</option>
-                    <option value="indonesia">Indonesia</option>
-                    <option value="ireland">Ireland</option>
-                    <option value="israel">Israel</option>
-                    <option value="italy">Italy</option>
-                    <option value="jamaica">Jamaica</option>
-                    <option value="japan">Japan</option>
-                    <option value="jordan">Jordan</option>
-                    <option value="kenya">Kenya</option>
-                    <option value="kuwait">Kuwait</option>
-                    <option value="lao_pdr">Lao PDR</option>
-                    <option value="lebanon">Lebanon</option>
-                    <option value="lithuania">LITHUANIA</option>
-                    <option value="luxembourg">LUXEMBOURG</option>
-                    <option value="macau_sar_china">Macau SAR,China</option>
-                    <option value="madagascar">Madagascar</option>
-                    <option value="malaysia">Malaysia</option>
-                    <option value="maldives">Maldives</option>
-                    <option value="mali">MALI</option>
-                    <option value="malta">MALTA</option>
-                    <option value="mauritius">Mauritius</option>
-                    <option value="mexico">Mexico</option>
-                    <option value="mongolia">Mongolia</option>
-                    <option value="morocco">Morocco</option>
-                    <option value="mozambique">Mozambique</option>
-                    <option value="netherland">Netherland</option>
-                    <option value="new_zealand">New Zealand</option>
-                    <option value="nigeria">Nigeria</option>
-                    <option value="norway">Norway</option>
-                    <option value="oman">Oman</option>
-                    <option value="palau">Palau</option>
-                    <option value="papua_new_guinea">PAPUA NEW GUINEA</option>
-                    <option value="poland">Poland</option>
-                    <option value="portugal">Portugal</option>
-                    <option value="qatar">Qatar</option>
-                    <option value="republic_of_congo">Republic of Congo</option>
-                    <option value="republic_of_korea">Republic of Korea</option>
-                    <option value="republic_of_kosovo">Republic of Kosovo</option>
-                    <option value="romania">Romania</option>
-                    <option value="russia">Russia</option>
-                    <option value="rwanda">Rwanda</option>
-                    <option value="saint_lucia">Saint Lucia</option>
-                    <option value="saudi_arabia">Saudi Arabia</option>
-                    <option value="senegal">Senegal</option>
-                    <option value="serbia">Serbia</option>
-                    <option value="seychelles">Seychelles</option>
-                    <option value="singapore">Singapore</option>
-                    <option value="slovenia">Slovenia</option>
-                    <option value="somalia">SOMALIA</option>
-                    <option value="south_sudan">South Sudan</option>
-                    <option value="spain">Spain</option>
-                    <option value="sri_lanka">Sri Lanka</option>
-                    <option value="sudan">Sudan</option>
-                    <option value="sweden">Sweden</option>
-                    <option value="thailand">Thailand</option>
-                    <option value="turkey">Turkey</option>
-                    <option value="turks_and_caicos_island">Turks and Caicos Island</option>
-                    <option value="uae">UAE</option>
-                    <option value="uganda">Uganda</option>
-                    <option value="united_kingdom">United Kingdom</option>
-                    <option value="uruguay">Uruguay</option>
-                    <option value="usa">USA</option>
-                    <option value="uzbekistan">Uzbekistan</option>
-                    <option value="west-indies">West-Indies</option>
-                    <option value="zambia">ZAMBIA</option>        
-                </select>
-                <label for="employment">Applicant Types:</label>
-                <select for="employment" name="employment">
-                    <option value="all">All</option>
-                    <option value="Recruiting Agency">Recruiting Agency</option>
-                    <option value="G-to-G">G-to-G</option>
-                    <option value="Individual-ReEntry">Individual ReEntry</option>
-                    <option value="Total with ReEntry">Total with ReEntry</option>
-                    <option value="Total without ReEntry">Total without ReEntry</option>
+</head>
+<body class="filter">
+  <label for="countryFiter">Country:</label>
+  <select id="country" onchange="showGenderOptions()">
+    <option value="">Select a country</option>
+    <option value="albania">ALBANIA</option>
+    <option value="angola">Angola</option>
+    <option value="angola">Angola</option>
+    <option value="australia">Australia</option>
+    <option value="austria">Austria</option>
+    <option value="bahrain">Bahrain</option>
+    <option value="bangladesh">Bangladesh</option>
+    <option value="barbados">BARBADOS</option>
+    <option value="bermuda">Bermuda</option>
+    <option value="bosnia_and_herzegovina">BOSNIA AND HERZEGOVINA</option>
+    <option value="brazil">Brazil</option>
+    <option value="brunei_darussalam">Brunei Darussalam</option>
+    <option value="burkina_faso">Burkina Faso</option>
+    <option value="cambodia">Cambodia</option>
+    <option value="canada">Canada</option>
+    <option value="cayman">Cayman</option>
+    <option value="chile">CHILE</option>
+    <option value="china">China</option>
+    <option value="colombia">COLOMBIA</option>
+    <option value="combodia">Combodia</option>
+    <option value="comoros">Comoros</option>
+    <option value="croatia">Croatia</option>
+    <option value="cyprus">Cyprus</option>
+    <option value="czech_republic">Czech Republic</option>
+    <option value="denmark">DENMARK</option>
+    <option value="dominican_republic">Dominican Republic</option>
+    <option value="egypt">Egypt</option>
+    <option value="equatorial_guinea">Equatorial Guinea</option>
+    <option value="ethiopia">ETHIOPIA</option>
+    <option value="finland">Finland</option>
+    <option value="france">France</option>
+    <option value="gabon">GABON</option>
+    <option value="germany">Germany</option>
+    <option value="ghana">Ghana</option>
+    <option value="greece">Greece</option>
+    <option value="hong_kong_sar_china">Hong Kong SAR,China</option>
+    <option value="hungary">Hungary</option>
+    <option value="indonesia">Indonesia</option>
+    <option value="ireland">Ireland</option>
+    <option value="israel">Israel</option>
+    <option value="italy">Italy</option>
+    <option value="jamaica">Jamaica</option>
+    <option value="japan">Japan</option>
+    <option value="jordan">Jordan</option>
+    <option value="kenya">Kenya</option>
+    <option value="kuwait">Kuwait</option>
+    <option value="lao_pdr">Lao PDR</option>
+    <option value="lebanon">Lebanon</option>
+    <option value="lithuania">LITHUANIA</option>
+    <option value="luxembourg">LUXEMBOURG</option>
+    <option value="macau_sar_china">Macau SAR,China</option>
+    <option value="madagascar">Madagascar</option>
+    <option value="malaysia">Malaysia</option>
+    <option value="maldives">Maldives</option>
+    <option value="mali">MALI</option>
+    <option value="malta">MALTA</option>
+    <option value="mauritius">Mauritius</option>
+    <option value="mexico">Mexico</option>
+    <option value="mongolia">Mongolia</option>
+    <option value="morocco">Morocco</option>
+    <option value="mozambique">Mozambique</option>
+    <option value="netherland">Netherland</option>
+    <option value="new_zealand">New Zealand</option>
+    <option value="nigeria">Nigeria</option>
+    <option value="norway">Norway</option>
+    <option value="oman">Oman</option>
+    <option value="palau">Palau</option>
+    <option value="papua_new_guinea">PAPUA NEW GUINEA</option>
+    <option value="poland">Poland</option>
+    <option value="portugal">Portugal</option>
+    <option value="qatar">Qatar</option>
+    <option value="republic_of_congo">Republic of Congo</option>
+    <option value="republic_of_korea">Republic of Korea</option>
+    <option value="republic_of_kosovo">Republic of Kosovo</option>
+    <option value="romania">Romania</option>
+    <option value="russia">Russia</option>
+    <option value="rwanda">Rwanda</option>
+    <option value="saint_lucia">Saint Lucia</option>
+    <option value="saudi_arabia">Saudi Arabia</option>
+    <option value="senegal">Senegal</option>
+    <option value="serbia">Serbia</option>
+    <option value="seychelles">Seychelles</option>
+    <option value="singapore">Singapore</option>
+    <option value="slovenia">Slovenia</option>
+    <option value="somalia">SOMALIA</option>
+    <option value="south_sudan">South Sudan</option>
+    <option value="spain">Spain</option>
+    <option value="sri_lanka">Sri Lanka</option>
+    <option value="sudan">Sudan</option>
+    <option value="sweden">Sweden</option>
+    <option value="thailand">Thailand</option>
+    <option value="turkey">Turkey</option>
+    <option value="turks_and_caicos_island">Turks and Caicos Island</option>
+    <option value="uae">UAE</option>
+    <option value="uganda">Uganda</option>
+    <option value="united_kingdom">United Kingdom</option>
+    <option value="uruguay">Uruguay</option>
+    <option value="usa">USA</option>
+    <option value="uzbekistan">Uzbekistan</option>
+    <option value="west-indies">West-Indies</option>
+    <option value="zambia">ZAMBIA</option>
+  </select>
 
-                </select>
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender">
-                    <option value="all">All</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                
-                <div class="container">
-                <br>
-                <button type="submit" class="btn btn-success">Search</button>
-                </div>
-            </form>
-            <p>80</p>
-        </div>
-    
-    <div class="district">
-    <h2>Districtwise Labour Approval 2079</h2>
-    </div>
-    <div class="filter">
-        <div>
-            <form>
-                <label for="district">District:</label>
-                <select id="district" name="district">
-                    <option value="all">All</option>
-                    <option value="achham">ACHHAM</option>
-                    <option value="arghakhanchi">ARGHAKHANCHI</option>
-                    <option value="baglung">BAGLUNG</option>
-                    <option value="baitadi">BAITADI</option>
-                    <option value="bajhang">BAJHANG</option>
-                    <option value="bajura">BAJURA</option>
-                    <option value="banke">BANKE</option>
-                    <option value="bara">BARA</option>
-                    <option value="bardiya">BARDIYA</option>
-                    <option value="bhaktapur">BHAKTAPUR</option>
-                    <option value="bhojpur">BHOJPUR</option>
-                    <option value="chitwan">CHITWAN</option>
-                    <option value="dadeldhura">DADELDHURA</option>
-                    <option value="dailekh">DAILEKH</option>
-                    <option value="dang">DANG</option>
-                    <option value="darchula">DARCHULA</option>
-                    <option value="dhading">DHADING</option>
-                    <option value="dhankuta">DHANKUTA</option>
-                    <option value="dhanusha">DHANUSHA</option>
-                    <option value="dolakha">DOLAKHA</option>
-                    <option value="dolpa">DOLPA</option>
-                    <option value="doti">DOTI</option>
-                    <option value="gorkha">GORKHA</option>
-                    <option value="gulmi">GULMI</option>
-                    <option value="humla">HUMLA</option>
-                    <option value="ilam">ILAM</option>
-                    <option value="jajarkot">JAJARKOT</option>
-                    <option value="jhapa">JHAPA</option>
-                    <option value="jumla">JUMLA</option>
-                    <option value="kailali">KAILALI</option>
-                    <option value="kalikot">KALIKOT</option>
-                    <option value="kanchanpur">KANCHANPUR</option>
-                    <option value="kapilvastu">KAPILVASTU</option>
-                    <option value="kaski">Kaski</option>
-                    <option value="kathmandu">KATHMANDU</option>
-                    <option value="kavrepalanchok">KAVREPALANCHOK</option>
-                    <option value="khotang">KHOTANG</option>
-                    <option value="lalitpur">LALITPUR</option>
-                    <option value="lamjung">LAMJUNG</option>
-                    <option value="mahottari">MAHOTTARI</option>
-                    <option value="makawanpur">MAKAWANPUR</option>
-                    <option value="manang">MANANG</option>
-                    <option value="morang">MORANG</option>
-                    <option value="mugu">MUGU</option>
-                    <option value="mustang">MUSTANG</option>
-                    <option value="myagdi">MYAGDI</option>
-                    <option value="nawalparasi">NAWALPARASI</option>
-                    <option value="nawalparasi-east">NAWALPARASI EAST</option>
-                    <option value="nawalparasi-west">NAWALPARASI WEST</option>
-                    <option value="nuwakot">NUWAKOT</option>
-                    <option value="okhaldhunga">OKHALDHUNGA</option>
-                    <option value="palpa">PALPA</option>
-                    <option value="panchthar">PANCHTHAR</option>
-                    <option value="parbat">PARBAT</option>
-                    <option value="parsa">PARSA</option>
-                    <option value="pyuthan">PYUTHAN</option>
-                    <option value="ramechhap">RAMECHHAP</option>
-                    <option value="rasuwa">RASUWA</option>
-                    <option value="rautahat">RAUTAHAT</option>
-                    <option value="rolpa">ROLPA</option>
-                    <option value="rukum">RUKUM</option>
-                    <option value="rukum-east">RUKUM EAST</option>
-                    <option value="rukum-west">RUKUM WEST</option>
-                    <option value="rupandehi">RUPANDEHI</option>
-                    <option value="salyan">SALYAN</option>
-                    <option value="sankhuwasabha">SANKHUWASABHA</option>
-                    <option value="saptari">SAPTARI</option>
-                    <option value="sarlahi">SARLAHI</option>
-                    <option value="sindhuli">SINDHULI</option>
-                    <option value="sindhupalchok">SINDHUPALCHOK</option>
-                    <option value="siraha">SIRAHA</option>
-                    <option value="solukhumbu">Solukhumbu</option>
-                    <option value="sunsari">SUNSARI</option>
-                    <option value="surkhet">SURKHET</option>
-                    <option value="syangja">SYANGJA</option>
-                    <option value="tanahun">TANAHUN</option>
-                    <option value="taplejung">TAPLEJUNG</option>
-                    <option value="tehrathum">TEHRATHUM</option>
-                    <option value="udayapur">UDAYAPUR</option>
-      
-                </select>
-                <label for="employment">Applicant Types:</label>
-                <select for="employment" name="employment">
-                    <option value="all">All</option>
-                    <option value="Recruiting Agency">Recruiting Agency</option>
-                    <option value="G-to-G">G-to-G</option>
-                    <option value="Individual-ReEntry">Individual ReEntry</option>
-                    <option value="Total with ReEntry">Total with ReEntry</option>
-                    <option value="Total without ReEntry">Total without ReEntry</option>
-
-                </select>
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender">
-                    <option value="all">All</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                <div class="container">
-                    <br>
-                <button type="submit" class="btn btn-success">Search</button>
-                </div>
-            </form>
-            <p>70</p>
-        </div>
-    <br>
-    <div class="container">
-        <footer class="footer">       
-            <p class="mb-0">Made by <a href="http://www.github.com//BibekRai44" target="_blank">Bibek Rai 💻</a></p>
-        </footer>
-    </div> 
-
+  <div id="genderOptions" style="display: none;">
+    <label for="gender">Gender:</label>
+    <select id="gender" onchange="showEmploymentOptions()">
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </div>
+  <div id="employmentOptions" style="display: none;">
+    <label for="employment">Employment Type:</label>
+    <select id="employment">
+      <option value="">Select an employment type</option>
+      <option value="Recruiting Agency">Recruiting Agency</option>
+      <option value="G-to-G">G-to-G</option>
+      <option value="Individual-ReEntry">Individual ReEntry</option>
+      <option value="Total with ReEntry">Total with ReEntry</option>
+      <option value="Total without ReEntry">Total without ReEntry</option>
+    </select>
+  </div>
+  <br>
+  <div class="button">
+  <button class="btn btn-success">Search</button>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <br>
+    <script>
+        function filterCountries() {
+                var input = document.getElementById('countryFilter').value.toLowerCase();
+                var options = document.getElementById('country').options;
+    
+                for (var i = 0; i < options.length; i++) {
+                    var country = options[i].text.toLowerCase();
+    
+                    if (country.indexOf(input) > -1) {
+                        options[i].style.display = '';
+                    } else {
+                        options[i].style.display = 'none';
+                    }
+                }
+            }
+        
+    
+        function showGenderOptions() {
+          var country = document.getElementById("country").value;
+          var genderOptions = document.getElementById("genderOptions");
+          var employmentOptions = document.getElementById("employmentOptions");
+        
+          if (country !== "") {
+            genderOptions.style.display = "block";
+          } else {
+            genderOptions.style.display = "none";
+            employmentOptions.style.display = "none";
+          }
+        }
+        function showEmploymentOptions() {
+          var gender = document.getElementById("gender").value;
+          var employmentOptions = document.getElementById("employmentOptions");
+    
+          if (gender !== "") {
+          employmentOptions.style.display = "block";
+      
+          if (gender === "Recruiting Agency") {
+            searchButton.style.display = "block";
+          } else {
+            searchButton.style.display = "none";
+          }
+         } else {
+          employmentOptions.style.display = "none";
+          searchButton.style.display = "none";
+        }
+      }
+      </script>
+      <br>
+    <div class="footer">      
+        Made by <a href="http://www.github.com//BibekRai44" target="_blank">Bibek Rai 💻</a>
+   </div>
+    
 </body>
+
 </html>

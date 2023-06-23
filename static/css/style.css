@@ -1,5 +1,9 @@
-footer{
-    text-align: center;
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;   /* Height of the footer */
+  background: #6cf;
 }
 .title {
     text-align: center;
@@ -24,18 +28,13 @@ footer{
   .country h2{
     color: blueviolet;
   }
-.district{
-  text-align: center;
-}
-  .district h2{
-    color: blueviolet;
-  }
-.filter-district{
-  text-align: start;
-}
 .container-logo{
   margin: 40px;
   margin-left: 0%;
   height: 10px;
   width: 5px;
 }
+.button{
+  text-align: center;
+}
+
