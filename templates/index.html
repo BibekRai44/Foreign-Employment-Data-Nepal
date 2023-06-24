@@ -145,13 +145,31 @@
   </div>
   <div id="employmentOptions" style="display: none;">
     <label for="employment">Employment Type:</label>
-    <select id="employment">
+    <select id="employment" onchange="showMonthOptions()">
       <option value="">Select an employment type</option>
       <option value="Recruiting Agency">Recruiting Agency</option>
       <option value="G-to-G">G-to-G</option>
       <option value="Individual-ReEntry">Individual ReEntry</option>
       <option value="Total with ReEntry">Total with ReEntry</option>
       <option value="Total without ReEntry">Total without ReEntry</option>
+    </select>
+  </div>
+  <div id="monthOptions" style="display: none;">
+    <label for="month">Month:</label>
+    <select id="month">
+      <option value="">Select a month</option>
+      <option value="Baisakh">Baisakh</option>
+      <option value="Jeshta">Jeshta</option>
+      <option value="Asar">Asar</option>
+      <option value="Shrawn">Shrawn</option>
+      <option value="Bhadra">Bhadra</option>
+      <option value="Ashoj">Ashoj</option>
+      <option value="Kartik">Kartik</option>
+      <option value="Mangsir">Mangsir</option>
+      <option value="Poush">Poush</option>
+      <option value="Magh">Magh</option>
+      <option value="Falgun">Falgun</option>
+      <option value="Chaitra">Chaitra</option>
     </select>
   </div>
   <br>
@@ -165,27 +183,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <br>
     <script>
-        function filterCountries() {
-                var input = document.getElementById('countryFilter').value.toLowerCase();
-                var options = document.getElementById('country').options;
-    
-                for (var i = 0; i < options.length; i++) {
-                    var country = options[i].text.toLowerCase();
-    
-                    if (country.indexOf(input) > -1) {
-                        options[i].style.display = '';
-                    } else {
-                        options[i].style.display = 'none';
-                    }
-                }
-            }
-        
     
         function showGenderOptions() {
           var country = document.getElementById("country").value;
-          var genderOptions = document.getElementById("genderOptions");
-          var employmentOptions = document.getElementById("employmentOptions");
-        
+           
           if (country !== "") {
             genderOptions.style.display = "block";
           } else {
@@ -195,21 +196,21 @@
         }
         function showEmploymentOptions() {
           var gender = document.getElementById("gender").value;
-          var employmentOptions = document.getElementById("employmentOptions");
+          
     
           if (gender !== "") {
           employmentOptions.style.display = "block";
-      
-          if (gender === "Recruiting Agency") {
-            searchButton.style.display = "block";
-          } else {
-            searchButton.style.display = "none";
           }
-         } else {
-          employmentOptions.style.display = "none";
-          searchButton.style.display = "none";
         }
-      }
+        function showMonthOptions(){
+          var employment=document.getElementById("employment").value;
+
+          if (employment !== ""){
+            monthOptions.style.display="block";
+          }
+
+
+        }
       </script>
       <br>
     <div class="footer">      
